@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="page-section" style="margin-top: 10rpx;margin-bottom: 0;">
+      <view class="weui-cells" wx:for="{{news}}" wx:key="id">
+        <view  class="weui-cell" >
+          {{item.title}}
+        </view>  
+      </view>
+    </view>
+  </view>
+</view>

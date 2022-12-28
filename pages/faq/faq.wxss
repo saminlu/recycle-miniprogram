@@ -1,0 +1,14 @@
+.shop-item{
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+  height: 50rpx;
+  width: 100%;
+border-bottom: black ;
+border-color: black;
+}
+.view{
+  margin-top: 20rpx;
+
+ }

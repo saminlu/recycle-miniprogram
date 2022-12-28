@@ -1,0 +1,80 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button class="login-button" open-type="getUserInfo" bindtap="getUserProfile">请先登录</button>
+    </block>
+      <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='menu'>
+  <!-- 菜单选项 -->
+  <view class='row' bindtap='enterOrder'>
+    <view class='icon'>
+      <image class="" src="../../assets/alibaba/dingdan2.png" mode="scaleToFill"></image>
+    </view>
+    <view class='text'>
+      <view>我的订单</view>
+      <view class='text-icon'>
+        <image class="teshu" src="../../assets/alibaba/sliverRight.png" mode="scaleToFill"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 菜单选项 -->
+  <view class='row' bindtap='enterAddress'>
+    <view class='icon'>
+      <image class="" src="../../assets/alibaba/dizhi3.png" mode="scaleToFill"></image>
+    </view>
+    <view class='text'>
+      <view>收货地址</view>
+      <view class='text-icon showIcon'>
+        <image class="" src="../../assets/alibaba/sliverRight.png" mode="scaleToFill"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 菜单选项 -->
+  <view class='row' bindtap='enterContact'>
+    <view class='icon'>
+      <image class="" src="../../assets/alibaba/kefu3.png" mode="scaleToFill"></image>
+    </view>
+    <view class='text'>
+      <view>联系客服</view>
+      <view class='text-icon showIcon'>
+        <image src='../../assets/alibaba/sliverRight.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 菜单选项 -->
+  <view class='row' bindtap='enterFeedback'>
+    <view class='icon'>
+      <image class="" src="../../assets/alibaba/yijian.png" mode="scaleToFill"></image>
+    </view>
+    <view class='text'>
+      <view>意见反馈</view>
+      <view class='text-icon showIcon'>
+        <image src='../../assets/alibaba/sliverRight.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 菜单选项 -->
+  <view class='row' bindtap='exitLogin'>
+    <view class='icon'>
+      <image class="" src="../../assets/alibaba/tuichu2.png" mode="scaleToFill"></image>
+    </view>
+    <block wx:if="{{hasUserInfo}}">
+    <view class='text'>
+      <view>退出登陆</view>
+      <view class='text-icon showIcon'>
+        <image src='../../assets/alibaba/sliverRight.png'></image>
+      </view>
+    </view>
+  </block>
+  </view>
+</view>
+</view>

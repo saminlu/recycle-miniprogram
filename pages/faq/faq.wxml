@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="view" wx:for="{{faqList}}" wx:key="id">
+   <view class="shop-item" >{{item.id}}:{{item.title}}</view>
+  </view>
+</view>

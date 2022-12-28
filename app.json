@@ -1,0 +1,54 @@
+{
+  "usingComponents": {},
+  "tabBar": {
+    "custom": true,
+    "color": "#8FBC8F",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/home.png",
+        "selectedIconPath": "/image/home.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "/image/news.png",
+        "selectedIconPath": "/image/news.png"
+      },
+      {
+        "pagePath": "pages/faq/faq",
+        "text": "常见问题",
+        "iconPath": "/image/faq.png",
+        "selectedIconPath": "/image/faq.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "下单",
+        "iconPath": "/image/add.png",
+        "selectedIconPath": "/image/add.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/image/me.png",
+        "selectedIconPath": "/image/me.png"
+      }
+    ]
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/order/order",
+    "pages/faq/faq",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小鼠回收",
+    "navigationBarTextStyle": "black"
+  }
+}
